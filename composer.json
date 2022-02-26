@@ -1,0 +1,37 @@
+{
+  "name": "prueba/prueba1",
+  "description": "Primera prueba de package",
+  "authors": [
+    {
+      "name": "Angel Munoz",
+      "email": "angelmmm000@lupindado.com"
+    }
+  ],
+  "autoload": {
+    "psr-4": {
+      "Prueba\\Prueba1\\": "src/"
+    },
+    "files": [
+      "src/helpers.php"
+    ]
+  },
+  "autoload-dev": {
+    "psr-4": {
+      "Prueba\\Prueba1\\Tests\\": "tests/"
+    }
+  },
+  "require-dev": {
+    "orchestra/testbench": "^7.0"
+  },
+  "extra": {
+    "laravel": {
+      "providers": [
+        "Prueba\\Prueba1\\Prueba1ServiceProvider",
+        "Prueba\\Prueba1\\RouteServiceProvider"
+      ],
+      "aliases": {
+        "Prueba1": "Prueba\\Prueba1\\Facades\\Prueba1"
+      }
+    }
+  }
+}
