@@ -23,6 +23,11 @@ class HelloTest extends TestCase
             "hola desde mi primer paquete, Luis",
             Prueba1::hello('Luis')
         );
+
+        $this->assertEquals(
+            "hola desde mi nuevo paquete, Ángel",
+            hello()
+        );
     }
 
     /** @test */

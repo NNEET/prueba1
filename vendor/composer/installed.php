@@ -1,11 +1,11 @@
 <?php return array(
     'root' => array(
-        'pretty_version' => '1.0.0+no-version-set',
-        'version' => '1.0.0.0',
+        'pretty_version' => 'dev-master',
+        'version' => 'dev-master',
         'type' => 'library',
         'install_path' => __DIR__ . '/../../',
         'aliases' => array(),
-        'reference' => NULL,
+        'reference' => '5e664c9301aca93f84386cd966f84788f67d72b9',
         'name' => 'prueba/prueba1',
         'dev' => true,
     ),
@@ -587,12 +587,12 @@
             'dev_requirement' => true,
         ),
         'prueba/prueba1' => array(
-            'pretty_version' => '1.0.0+no-version-set',
-            'version' => '1.0.0.0',
+            'pretty_version' => 'dev-master',
+            'version' => 'dev-master',
             'type' => 'library',
             'install_path' => __DIR__ . '/../../',
             'aliases' => array(),
-            'reference' => NULL,
+            'reference' => '5e664c9301aca93f84386cd966f84788f67d72b9',
             'dev_requirement' => false,
         ),
         'psr/container' => array(

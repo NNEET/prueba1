@@ -14,17 +14,14 @@ class Prueba1ServiceProvider extends ServiceProvider
 //        $this->loadRoutesFrom($this->basePath('routes/web.php'));
         $this->loadViewsFrom(
             $this->basePath('resources/views/'),
-            'Prueba1'
-        );
+            'Prueba1');
 
         $this->loadMigrationsFrom(
-            $this->basePath('database/migrations')
-        );
+            $this->basePath('database/migrations'));
 
-        $this->loadTanslationsFrom(
+        $this->loadTranslationsFrom(
             $this->basePath('resources/lang'),
-            'Prueba1'
-        );
+            'Prueba1');
 
         $this->loadJsonTranslationsFrom(
             $this->basePath('resources/lang/json')
@@ -45,6 +42,10 @@ class Prueba1ServiceProvider extends ServiceProvider
         $this->publishes([
             $this->basePath('database/migrations/') => database_path('migrations')
         ], 'prueba1-migrations');
+
+        $this->publishes([
+            $this->basePath('resources/static') => public_path('vendor/prueba1')
+        ], 'prueba1-static-assets');
     }
 
     public function register()
